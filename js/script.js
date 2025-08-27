@@ -25,14 +25,14 @@ if (userAge < 18) {
 
     console.log("il costo del biglietto è" + " €" + price)
 
-    // PREZZO RIDOTTO ANZIANI
+// PREZZO RIDOTTO ANZIANI
 } else if (userAge > 65) {
     const oldDiscount = ticketPrice - ((ticketPrice / 100) * 40);
     const price = oldDiscount.toFixed(2);
 
     console.log("il costo del biglietto è" + " €" + price)
 
-    // PREZZO INTERO
+// PREZZO INTERO
 } else {
     const price = ticketPrice.toFixed(2);
 

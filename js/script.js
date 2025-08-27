@@ -13,9 +13,9 @@ const userAge = parseInt(prompt("Inserisci la tua età"));
 const kmNumber = parseInt(prompt("Inserisci i KM da percorrere"));
 
 console.log(userAge);
-console.log(kmNumber + " km");
+console.log(kmNumber + " Km");
 
-// PREZZO BIGLIETTO INTERO
+// BIGLIETTO INTERO
 const ticketPrice = (kmNumber * 0.21);
 
 // PREZZO RIDOTTO BAMBINI
@@ -25,12 +25,14 @@ if (userAge < 18) {
 
     console.log("il costo del biglietto è" + " €" + price)
 
+    // PREZZO RIDOTTO ANZIANI
 } else if (userAge > 65) {
     const oldDiscount = ticketPrice - ((ticketPrice / 100) * 40);
     const price = oldDiscount.toFixed(2);
 
     console.log("il costo del biglietto è" + " €" + price)
 
+    // PREZZO INTERO
 } else {
     const price = ticketPrice.toFixed(2);
 

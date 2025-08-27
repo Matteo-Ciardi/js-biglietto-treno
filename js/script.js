@@ -8,6 +8,21 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 - L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). */
 
 
+// DATI UTENTE
+const userAge = parseInt(prompt("Inserisci la tua età"));
+const kmNumber = parseInt(prompt("Inserisci i KM da percorrere"));
+
+console.log(userAge);
+console.log(kmNumber + " km");
+
+// PREZZO BIGLIETTO INTERO
+const ticketPrice = (kmNumber * 0.21);
+
+console.log(ticketPrice);
+
+// PREZZO RIDOTTO BAMBINI
+
+
 
 
 
